@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khalid Jamil — Aspiring Full-Stack Developer (MERN), New Delhi"
+    />
+    <title>Khalid Jamil — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-box">KJ</div>
+        <div class="nav-logo-name">Khalid<span>.dev</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#education" onclick="closeMobile()">Education</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero" class="grid-bg">
+      <div class="scan-line"></div>
+      <div class="hero-orb1"></div>
+      <div class="hero-orb2"></div>
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-prompt">
+            khalid@portfolio:~&nbsp;<span class="cursor-blink"></span>
+          </div>
+          <div class="hero-name">
+            <span class="hero-name-top">KHALID</span><br />
+            <span class="hero-name-bot">JAMIL</span>
+          </div>
+          <div class="hero-role">
+            <div class="hero-role-line"></div>
+            <div class="hero-role-text">
+              Full Stack Developer &nbsp;·&nbsp; MERN Stack
+            </div>
+          </div>
+          <p class="hero-bio">
+            Aspiring full-stack developer from New Delhi — building modern web
+            apps with clean code, sharp UI, and AI-powered workflows. BCA
+            student, fast learner, always shipping.
+          </p>
+          <div class="hero-kv">
+            <div class="hero-kv-row">
+              <span class="kv-key">location</span><span class="kv-eq">=</span
+              ><span class="kv-val">"New Delhi, India"</span>
+            </div>
+            <div class="hero-kv-row">
+              <span class="kv-key">status</span><span class="kv-eq">=</span
+              ><span class="kv-val green">open_to_opportunities</span>
+            </div>
+            <div class="hero-kv-row">
+              <span class="kv-key">currently</span><span class="kv-eq">=</span
+              ><span class="kv-val blue">mastering_MERN_stack</span>
+            </div>
+            <div class="hero-kv-row">
+              <span class="kv-key">contact</span><span class="kv-eq">=</span
+              ><span class="kv-val">"khalidjamil0777@gmail.com"</span>
+            </div>
+          </div>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-outline">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <div class="t-dot" style="background: #ff5f57"></div>
+              <div class="t-dot" style="background: #ffbd2e"></div>
+              <div class="t-dot" style="background: #28ca42"></div>
+              <div class="t-title">system.info</div>
+            </div>
+            <div class="terminal-body">
+              <div class="t-row">
+                <div class="t-label">Developer</div>
+                <div class="t-value">Khalid Jamil</div>
+              </div>
+              <div class="t-divider"></div>
+              <div class="t-row">
+                <div class="t-label">Degree</div>
+                <div class="t-value blue">BCA · 2023–2026</div>
+              </div>
+              <div class="t-divider"></div>
+              <div class="t-row">
+                <div class="t-label">Projects</div>
+                <div class="t-value green">5+ built</div>
+              </div>
+              <div class="t-divider"></div>
+              <div class="t-row">
+                <div class="t-label">AI Workflow</div>
+                <div class="t-value amber">ChatGPT · Copilot</div>
+              </div>
+              <div class="t-divider"></div>
+              <div class="t-row">
+                <div class="t-label">Stack</div>
+                <div class="t-tags">
+                  <span class="t-tag">HTML</span><span class="t-tag">CSS</span
+                  ><span class="t-tag">JS</span> <span class="t-tag">React</span
+                  ><span class="t-tag">Node</span
+                  ><span class="t-tag">MongoDB</span
+                  ><span class="t-tag">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-wrap">
+        <div class="reveal">
+          <p class="section-tag">// 01 — about</p>
+          <h2 class="section-title">Who I <em>Am</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-bio reveal">
+            <p>
+              I'm <em>Khalid Jamil</em>, an aspiring Full-Stack Developer
+              currently pursuing
+              <strong>BCA at IIMT Group of Colleges, Delhi NCR</strong>
+              (2023–2026).
+            </p>
+            <p>
+              I have solid hands-on experience in
+              <strong>HTML5, CSS3, Bootstrap</strong> and
+              <strong>JavaScript</strong>, and I'm actively mastering the MERN
+              stack — building real projects every week to level up my skills.
+            </p>
+            <p>
+              I use <strong>AI tools</strong> like ChatGPT and GitHub Copilot to
+              code smarter, debug faster, and stay ahead — treating AI as a
+              genuine productivity multiplier, not a shortcut.
+            </p>
+            <p>
+              Fluent in <strong>English</strong> (professional) and
+              <strong>Hindi</strong> (native). Based in New Delhi, open to
+              remote opportunities.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">HTML5</span
+              ><span class="about-tag">CSS3</span
+              ><span class="about-tag">Bootstrap</span>
+              <span class="about-tag">JavaScript</span
+              ><span class="about-tag">React.js</span
+              ><span class="about-tag">Node.js</span>
+              <span class="about-tag">Express.js</span
+              ><span class="about-tag">MongoDB</span
+              ><span class="about-tag">Git / GitHub</span
+              ><span class="about-tag">VS Code</span>
+            </div>
+            <a href="./Khalid Jamil Resume.pdf" class="about-resume-link"
+              >Download Resume &nbsp;→</a
+            >
+          </div>
+          <div class="stats-grid reveal reveal-delay-2">
+            <div class="stat-card">
+              <div class="stat-num" style="color: var(--accent)">5+</div>
+              <div class="stat-label">Projects built</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" style="color: var(--green)">MERN</div>
+              <div class="stat-label">Stack focus</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" style="color: var(--amber)">2026</div>
+              <div class="stat-label">BCA graduate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num" style="color: var(--purple)">AI</div>
+              <div class="stat-label">Powered dev</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div
+            class="about-card reveal reveal-delay-1"
+            style="border-top-color: rgba(79, 142, 247, 0.4)"
+          >
+            <div class="card-num">01</div>
+            <div class="card-title">Fast Learner</div>
+            <div class="card-desc">
+              Picks up new frameworks and tools quickly through consistent
+              hands-on project building and daily practice.
+            </div>
+          </div>
+          <div
+            class="about-card reveal reveal-delay-2"
+            style="border-top-color: rgba(167, 139, 250, 0.4)"
+          >
+            <div class="card-num">02</div>
+            <div class="card-title">AI-Powered Dev</div>
+            <div class="card-desc">
+              Uses ChatGPT and GitHub Copilot as productivity tools — for faster
+              debugging, learning new APIs, and cleaner code.
+            </div>
+          </div>
+          <div
+            class="about-card reveal reveal-delay-3"
+            style="border-top-color: rgba(52, 211, 153, 0.4)"
+          >
+            <div class="card-num">03</div>
+            <div class="card-title">Responsive-First</div>
+            <div class="card-desc">
+              Builds mobile-first, cross-browser compatible UIs that look
+              polished on every screen size and device.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-wrap">
+        <div class="reveal">
+          <p class="section-tag">// 02 — skills</p>
+          <h2 class="section-title">Tech <em>Stack</em></h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-group reveal reveal-delay-1">
+            <div class="skill-group-title">
+              <div class="sg-dot" style="background: var(--accent)"></div>
+              Frontend
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS3</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Bootstrap</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React.js</span
+              ><span class="skill-badge badge-learning">Learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+          </div>
+          <div class="skill-group reveal reveal-delay-2">
+            <div class="skill-group-title">
+              <div class="sg-dot" style="background: var(--green)"></div>
+              Backend &amp; Database
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span
+              ><span class="skill-badge badge-learning">Learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Express.js</span
+              ><span class="skill-badge badge-learning">Learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MongoDB</span
+              ><span class="skill-badge badge-learning">Learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RESTful APIs</span
+              ><span class="skill-badge badge-learning">Learning</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MySQL</span
+              ><span class="skill-badge badge-familiar">Familiar</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C / C++ / Java</span
+              ><span class="skill-badge badge-familiar">Familiar</span>
+            </div>
+          </div>
+          <div class="skill-group reveal reveal-delay-3">
+            <div class="skill-group-title">
+              <div class="sg-dot" style="background: var(--amber)"></div>
+              Tools &amp; Workflow
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">ChatGPT</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">GitHub Copilot</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Version Control</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Cross-browser Testing</span
+              ><span class="skill-badge badge-pro">Proficient</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-legend reveal">
+          <div class="legend-item">
+            <div
+              class="legend-dot"
+              style="background: rgba(52, 211, 153, 0.5)"
+            ></div>
+            Proficient — use confidently
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-dot"
+              style="background: rgba(251, 191, 36, 0.5)"
+            ></div>
+            Learning — actively building
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-dot"
+              style="background: rgba(167, 139, 250, 0.5)"
+            ></div>
+            Familiar — basic knowledge
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-wrap">
+        <div class="reveal">
+          <p class="section-tag">// 03 — projects</p>
+          <h2 class="section-title">My <em>Work</em></h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured reveal reveal-delay-1">
+            <div
+              class="project-card-accent"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  var(--accent),
+                  var(--accent2)
+                );
+              "
+            ></div>
+            <div class="featured-badge">MERN Full-Stack</div>
+            <div class="project-preview">
+              <div class="project-preview-grid"></div>
+              <div
+                class="project-preview-label"
+                style="
+                  color: var(--accent);
+                  border-color: rgba(79, 142, 247, 0.2);
+                "
+              >
+                Echo E-Commerce
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta" style="color: var(--accent)">
+                Full-Stack · MERN · 2026
+              </div>
+              <div class="project-title">Echo MERN Project</div>
+              <p class="project-desc">
+                A full-stack E-Commerce Project with user authentication, and a
+                clean React UI. Built with MongoDB, Express, React and Node.js.
+              </p>
+              <div class="project-stack">
+                <span class="p-tag">React.js</span
+                ><span class="p-tag">Node.js</span
+                ><span class="p-tag">Express.js</span
+                ><span class="p-tag">MongoDB</span
+                ><span class="p-tag">JWT Auth</span> <span class="p-tag"
+                  >AI-Assisted</span
+                >
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://echo-full-stack-e-commerce-project.vercel.app"
+                  class="p-link"
+                  >Live ↗</a
+                ><a
+                  href="https://github.com/khalidjamil0777/Echo-full-stack-E-commerce-Project.git"
+                  class="p-link"
+                  target="_blank"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <div
+              class="project-card-accent"
+              style="background: var(--purple)"
+            ></div>
+            <div class="project-preview">
+              <div class="project-preview-grid"></div>
+              <div
+                class="project-preview-label"
+                style="
+                  color: var(--purple);
+                  border-color: rgba(167, 139, 250, 0.2);
+                "
+              >
+                Portfolio Website
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta" style="color: var(--purple)">
+                Frontend · Portfolio · 2026
+              </div>
+              <div class="project-title">Personal Portfolio Website</div>
+              <p class="project-desc">
+                A responsive portfolio showcasing projects and skills with
+                AI-enhanced design, interactive features and modern UI using
+                HTML5, CSS3 and JavaScript.
+              </p>
+              <div class="project-stack">
+                <span class="p-tag">HTML5</span><span class="p-tag">CSS3</span
+                ><span class="p-tag">JavaScript</span
+                ><span class="p-tag">AI-Assisted</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="p-link">Live ↗</a
+                ><a
+                  href="https://github.com/khalidjamil"
+                  class="p-link"
+                  target="_blank"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-1">
+            <div
+              class="project-card-accent"
+              style="background: var(--amber)"
+            ></div>
+            <div class="project-preview">
+              <div class="project-preview-grid"></div>
+              <div
+                class="project-preview-label"
+                style="
+                  color: var(--amber);
+                  border-color: rgba(251, 191, 36, 0.2);
+                "
+              >
+                Simon Game
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta" style="color: var(--amber)">
+                Web Game · Simon Game · 2025
+              </div>
+              <div class="project-title">Interactive Memory Game</div>
+              <p class="project-desc">
+                A responsive Simon Game built with HTML5, CSS3 and JavaScript
+                featuring sound effects, animated button sequences, score
+                tracking and an engaging modern UI to test memory and reflex
+                skills.
+              </p>
+              <div class="project-stack">
+                <span class="p-tag">HTML5</span
+                ><span class="p-tag">CSS3</span> <span class="p-tag"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/khalidjamil0777"
+                  class="p-link"
+                  target="_blank"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <div
+              class="project-card-accent"
+              style="background: var(--green)"
+            ></div>
+            <div class="project-preview">
+              <div class="project-preview-grid"></div>
+              <div
+                class="project-preview-label"
+                style="
+                  color: var(--green);
+                  border-color: rgba(52, 211, 153, 0.2);
+                "
+              >
+                Amazon + Spotify + UltraEdit
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta" style="color: var(--green)">
+                Clone Projects · Practice · 2025 - 2026
+              </div>
+              <div class="project-title">UI Clone Projects</div>
+              <p class="project-desc">
+                Front-end clones of Amazon, Spotify and UltraEdit, replicating
+                complex navigation, product grids, sidebar layouts and media
+                player UI using pure HTML5 and CSS3.
+              </p>
+              <div class="project-stack">
+                <span class="p-tag">HTML5</span><span class="p-tag">CSS3</span
+                ><span class="p-tag">Flexbox</span
+                ><span class="p-tag">CSS Grid</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/khalidjamil0777"
+                  class="p-link"
+                  target="_blank"
+                  >GitHub ↗</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="section-wrap">
+        <div class="reveal">
+          <p class="section-tag">// 04 — education &amp; certifications</p>
+          <h2 class="section-title">My <em>Journey</em></h2>
+        </div>
+        <div class="edu-layout">
+          <div>
+            <div class="edu-list">
+              <div class="edu-item reveal reveal-delay-1">
+                <div class="edu-num">01</div>
+                <div>
+                  <div class="edu-degree">
+                    Bachelor of Computer Applications (BCA)<span
+                      class="edu-current"
+                      >Ongoing</span
+                    >
+                  </div>
+                  <div class="edu-inst">IIMT Group of Colleges, Delhi NCR</div>
+                  <div class="edu-year">2023 — 2026</div>
+                </div>
+              </div>
+              <div class="edu-item reveal reveal-delay-2">
+                <div class="edu-num">02</div>
+                <div>
+                  <div class="edu-degree">
+                    Advanced Diploma in Computer Applications (ADCA)
+                  </div>
+                  <div class="edu-inst">Computer Institute</div>
+                  <div class="edu-year">2021 — 2022</div>
+                </div>
+              </div>
+              <div class="edu-item reveal reveal-delay-3">
+                <div class="edu-num">03</div>
+                <div>
+                  <div class="edu-degree">Class 12 — Higher Secondary</div>
+                  <div class="edu-inst">MM Memorial High School, Bihar</div>
+                  <div class="edu-year">2022</div>
+                </div>
+              </div>
+              <div class="edu-item reveal reveal-delay-4">
+                <div class="edu-num">04</div>
+                <div>
+                  <div class="edu-degree">Class 10 — Secondary</div>
+                  <div class="edu-inst">DAV High School, Bihar</div>
+                  <div class="edu-year">2020</div>
+                </div>
+              </div>
+            </div>
+            <div class="soft-skills reveal" style="margin-top: 24px">
+              <div class="soft-title">// soft skills</div>
+              <div class="soft-list">
+                <span class="soft-tag">Quick Learning</span
+                ><span class="soft-tag">Team Collaboration</span>
+                <span class="soft-tag">Problem-Solving</span
+                ><span class="soft-tag">Adaptability</span>
+                <span class="soft-tag">Technical Communication</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="certs-title">// certifications</div>
+            <div
+              class="cert-item"
+              style="border-color: rgba(52, 211, 153, 0.15)"
+            >
+              <div class="cert-name" style="color: var(--green)">
+                MERN Stack Development<span class="cert-wip">In Progress</span>
+              </div>
+              <div class="cert-by">Online GFG Course</div>
+              <div class="cert-year">2026</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name" style="color: var(--amber)">
+                Generative AI Mastermind
+              </div>
+              <div class="cert-by">Outskill</div>
+              <div class="cert-year">2025</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name" style="color: var(--accent)">
+                HTML &amp; CSS Certificate
+              </div>
+              <div class="cert-by">CodeChef</div>
+              <div class="cert-year">2023</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name" style="color: var(--purple)">
+                Python (Basic) Certificate
+              </div>
+              <div class="cert-by">CodeChef</div>
+              <div class="cert-year">2023</div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-name" style="color: var(--purple)">
+                Java (Basic) Certificate
+              </div>
+              <div class="cert-by">CodeChef</div>
+              <div class="cert-year">2023</div>
+            </div>
+            
+            
+            <div style="margin-top: 20px">
+              <div class="certs-title">// languages</div>
+              <div class="cert-item">
+                <div class="cert-name">English</div>
+                <div class="cert-by">Professional Proficiency</div>
+              </div>
+              <div class="cert-item">
+                <div class="cert-name">Hindi</div>
+                <div class="cert-by">Native Speaker</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-wrap">
+        <div class="reveal">
+          <p class="section-tag">// 05 — contact</p>
+          <h2 class="section-title">Let's <em>Connect</em></h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-form reveal" id="contactForm">
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label">Name</label
+                  ><input
+                    type="text"
+                    class="form-input"
+                    placeholder="Your name"
+                    id="fname"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Email</label
+                  ><input
+                    type="email"
+                    class="form-input"
+                    placeholder="your@email.com"
+                    id="femail"
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="form-label">Subject</label
+                ><input
+                  type="text"
+                  class="form-input"
+                  placeholder="Internship · Freelance · Collaboration · Just saying hi"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Message</label
+                ><textarea
+                  class="form-input"
+                  placeholder="Tell me about the opportunity or project..."
+                ></textarea>
+              </div>
+              <button class="form-submit" onclick="submitForm()">
+                Send Message →
+              </button>
+            </div>
+            <div class="form-success" id="formSuccess">
+              <div class="success-check">✓</div>
+              <div class="success-title">Message Sent!</div>
+              <div class="success-sub">
+                I'll reply within 24 hours at khalidjamil0777@gmail.com
+              </div>
+              <button class="success-reset" onclick="resetForm()">
+                Send another →
+              </button>
+            </div>
+          </div>
+          <div class="contact-sidebar reveal reveal-delay-2">
+            <div class="avail-card">
+              <div class="avail-row">
+                <div class="avail-dot"></div>
+                <div class="avail-title">Available for work</div>
+              </div>
+              <div class="avail-sub">
+                Open to internships &amp; freelance projects
+              </div>
+            </div>
+            <div class="avail-card">
+              <div
+                style="
+                  font-family: &quot;DM Mono&quot;, monospace;
+                  font-size: 9px;
+                  color: #5a6578;
+                  letter-spacing: 0.15em;
+                  text-transform: uppercase;
+                  margin-bottom: 8px;
+                "
+              >
+                Response time
+              </div>
+              <div
+                style="
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  font-size: 24px;
+                  font-weight: 700;
+                  color: #4f8ef7;
+                "
+              >
+                &lt; 24 hours
+              </div>
+            </div>
+            <div class="social-card">
+              <div class="social-header">// find me at</div>
+              <a
+                href="https://github.com/khalidjamil0777"
+                target="_blank"
+                class="social-item"
+              >
+                <div class="social-icon">GH</div>
+                <div>
+                  <div class="social-name">GitHub</div>
+                  <div class="social-val">github.com/khalidjamil</div>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/khalidjamil0777"
+                target="_blank"
+                class="social-item"
+              >
+                <div class="social-icon">LI</div>
+                <div>
+                  <div class="social-name">LinkedIn</div>
+                  <div class="social-val">linkedin.com/in/khalidjamil</div>
+                </div>
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=khalidjamil0777@gmail.com"
+                class="social-item"
+              >
+                <div class="social-icon">@</div>
+                <div>
+                  <div class="social-name">Email</div>
+                  <div class="social-val">khalidjamil0777@gmail.com</div>
+                </div>
+              </a>
+              <a href="tel:+917485818393" class="social-item">
+                <div class="social-icon">#</div>
+                <div>
+                  <div class="social-name">Phone</div>
+                  <div class="social-val">+91 7485818393</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">KJ.dev</div>
+      <div class="footer-copy">
+        © 2026 Khalid Jamil — Aspiring Full-Stack Developer
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/khalidjamil0777" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/khalidjamil0777" target="_blank"
+          >LinkedIn</a
+        >
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=khalidjamil0777@gmail.com"
+          target="_blank"
+        >
+          Email
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/cursor.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+  </body>
+</html>

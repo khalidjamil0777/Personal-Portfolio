@@ -1,0 +1,118 @@
+/* =========================================
+   CONTACT
+   ========================================= */
+
+#contact { padding: 100px 0 60px; background: var(--bg2); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+}
+
+.contact-form { display: flex; flex-direction: column; gap: 14px; }
+
+.form-row   { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-label {
+  font-family: var(--ff-mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.form-input {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 11px 14px;
+  color: var(--white);
+  font-family: var(--ff-body);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.form-input:focus       { border-color: rgba(79,142,247,0.4); }
+.form-input::placeholder { color: var(--muted); }
+textarea.form-input     { height: 100px; resize: none; }
+
+.form-submit {
+  padding: 13px;
+  background: var(--white);
+  color: var(--bg);
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: none;
+  transition: all 0.15s;
+}
+.form-submit:hover { background: #fff; transform: translateY(-1px); }
+
+/* Success state */
+.form-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  min-height: 280px;
+}
+.form-success.show  { display: flex; }
+.success-check {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: rgba(52,211,153,0.1);
+  border: 1px solid rgba(52,211,153,0.2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+.success-title { font-family: var(--ff-display); font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.success-sub   { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+.success-reset {
+  font-family: var(--ff-mono); font-size: 10px; color: var(--accent);
+  letter-spacing: 0.1em; background: none; border: none; cursor: none; text-transform: uppercase;
+}
+
+/* Sidebar */
+.contact-sidebar { display: flex; flex-direction: column; gap: 12px; }
+.avail-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
+.avail-row  { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.avail-dot  {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--green); flex-shrink: 0;
+  animation: pulse 2s infinite;
+}
+.avail-title { font-size: 13px; font-weight: 500; color: var(--white); }
+.avail-sub   { font-family: var(--ff-mono); font-size: 10px; color: var(--muted); letter-spacing: 0.06em; margin-left: 17px; }
+
+.social-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
+.social-header { font-family: var(--ff-mono); font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.social-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.social-item:last-child     { border-bottom: none; }
+.social-item:hover .social-name { color: var(--white); }
+.social-icon {
+  width: 30px; height: 30px; border-radius: 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
+  flex-shrink: 0;
+  background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+}
+.social-name { font-size: 12px; font-weight: 500; color: var(--muted2); transition: color 0.15s; }
+.social-val  { font-family: var(--ff-mono); font-size: 10px; color: var(--muted); }

@@ -1,0 +1,87 @@
+/* =========================================
+   EDUCATION & CERTIFICATIONS
+   ========================================= */
+
+#education { padding: 100px 0; background: var(--bg); }
+
+.edu-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 40px;
+}
+
+.edu-list { display: flex; flex-direction: column; gap: 8px; }
+
+.edu-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+.edu-item:hover { border-color: var(--border2); }
+
+.edu-num    { font-family: var(--ff-mono); font-size: 11px; color: var(--muted); min-width: 24px; padding-top: 2px; }
+.edu-degree { font-family: var(--ff-display); font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 5px; }
+.edu-inst   { font-size: 12px; color: var(--accent); margin-bottom: 3px; }
+.edu-year   { font-family: var(--ff-mono); font-size: 10px; color: var(--muted); letter-spacing: 0.06em; }
+.edu-current {
+  display: inline-block;
+  font-family: var(--ff-mono);
+  font-size: 8px;
+  padding: 2px 7px;
+  background: rgba(52,211,153,0.08);
+  border: 1px solid rgba(52,211,153,0.2);
+  color: var(--green);
+  border-radius: 2px;
+  margin-left: 8px;
+  letter-spacing: 0.06em;
+}
+
+.certs-title {
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.cert-item {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+.cert-item:hover { border-color: var(--border2); }
+.cert-name  { font-size: 13px; font-weight: 500; color: var(--white); margin-bottom: 4px; }
+.cert-by    { font-family: var(--ff-mono); font-size: 10px; color: var(--muted); }
+.cert-year  { font-family: var(--ff-mono); font-size: 9px; color: var(--muted); margin-top: 3px; }
+.cert-wip {
+  font-family: var(--ff-mono);
+  font-size: 8px;
+  padding: 2px 7px;
+  background: rgba(251,191,36,0.08);
+  border: 1px solid rgba(251,191,36,0.2);
+  color: var(--amber);
+  border-radius: 2px;
+  margin-left: 6px;
+}
+
+.soft-skills { margin-top: 24px; }
+.soft-title  { font-family: var(--ff-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.soft-list   { display: flex; flex-wrap: wrap; gap: 6px; }
+.soft-tag {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  color: var(--muted);
+  transition: all 0.15s;
+}
+.soft-tag:hover { border-color: var(--border2); color: var(--muted2); }

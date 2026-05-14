@@ -1,0 +1,136 @@
+/* =========================================
+   ABOUT
+   ========================================= */
+
+#about {
+  padding: 100px 0;
+  background: var(--bg2);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+.about-bio p {
+  font-size: 14px;
+  color: var(--muted2);
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+.about-bio strong {
+  color: var(--muted2);
+  font-weight: 500;
+}
+.about-bio em {
+  font-style: normal;
+  color: var(--white);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+.about-tag {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  color: var(--muted2);
+  letter-spacing: 0.05em;
+  transition: all 0.15s;
+}
+.about-tag:hover {
+  border-color: var(--border2);
+  color: var(--white);
+}
+
+.about-resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  font-family: var(--ff-mono);
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+.about-resume-link:hover {
+  gap: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.stat-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  transition: border-color 0.2s;
+}
+.stat-card:hover {
+  border-color: var(--border2);
+}
+.stat-num {
+  font-family: var(--ff-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-family: var(--ff-mono);
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.about-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-top: 2px solid;
+  border-radius: 6px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border2);
+}
+.card-num {
+  font-family: var(--ff-mono);
+  font-size: 9px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.card-title {
+  font-family: var(--ff-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.card-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.65;
+}
